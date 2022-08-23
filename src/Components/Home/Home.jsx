@@ -22,18 +22,21 @@ export default function Home() {
 
   return (
     <>
-
-      <div className="w-100 position-relative mb-5">
-        <div className=' w-100position-absolute top-0 left-0 right-0 bottom-0  divphoto py-4 text-center'>
-          <div className='d-flex flex-column justify-content-between w-100 align-items-center h-100'>
-            <div>
-              <h1 className='text-darkBlue fw-bolder py-2'>Build Your Library</h1>
-              <h5 className='text-muted fw-bold '>Buy two selected books and get one for free</h5>
+      <div className='row'>
+        <div className='col-md-12'>
+          <div className="w-100 position-relative mb-5">
+            <img className=" w-100" src={book2} alt="First slide" />
+            <div className=' w-100 position-absolute top-0 left-0 right-0 bottom-0 overflow-auto divphoto py-4 text-center'>
+              <div className='d-flex flex-column justify-content-between w-100 align-items-center h-100'>
+                <div>
+                  <h1 className='text-darkBlue fw-bolder py-2'>Build Your Library</h1>
+                  <h5 className='text-muted fw-bold '>Buy two selected books and get one for free</h5>
+                </div>
+                <button onClick={() => navigate("/store")} className='w-25 bg-darkBlue text-light fw-bold py-2 px-4 mt-5 rounded fs-5'>View all</button>
+              </div>
             </div>
-            <button onClick={() => navigate("/store")} className='w-25 bg-darkBlue text-light fw-bold py-2 px-4 mt-5 rounded fs-5'>View all</button>
           </div>
         </div>
-        <img className=" w-100" src={book2} alt="First slide" />
       </div>
       <div className='d-flex w-100 justify-content-md-between align-items-center mb-3'>
         <h2 className='text-darkGrey fw-bold '>Popular Now</h2>
