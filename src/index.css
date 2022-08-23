@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*********************************COLORS***********************************/
+.bg-lightGrey
+{
+  background-color: #eeeeee !important;
+}
+.text-grey
+{
+  color: #979494 !important;
+}
+.bg-darkBlue
+{
+  background-color: #413B89!important;
+}
+.text-darkBlue
+{
+  color: #413B89 !important;
+}
+
+.bg-lilac
+{
+  background-color: #F3E7DD !important;
+}
+.text-darkGrey
+{
+  color: #474B51 !important;
+}
+.text-purple
+{
+color: #DE2454 !important;
+}
+.bg-purple
+{
+  background-color: #DE2454 !important;
+}
+
+/*********************************END OF COLORS***************************************************/
+
+/*********************************CLASSES***************************************************************/
+.cursore-pointer
+{
+  cursor: pointer !important;
+}
+
+/*********************************END OF CLASSES***************************************************************/
+
+
+/*****************************************Input in NavBar****************************************/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #C5CBCD;
+  font-weight: 500;
+}
+.fa-magnifying-glass
+{
+  position: absolute;
+  right: 35px;
+  top: 35%;
+}
+.counterSpan
+{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active::after
+{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  background-color: #413B89 !important;;
+}
+.active{
+  color:#413B89 !important ;
+}
+
+.divphoto
+{
+  background-color: rgba(179 174 174 / 21%);
+  z-index: 9;
+  height: 100%;
+}
+a{
+  text-decoration: none !important;
+}

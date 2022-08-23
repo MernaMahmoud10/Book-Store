@@ -1,0 +1,18 @@
+.BookImg
+{
+    height: 400px;
+    transition: all 1s;
+}
+
+.bookDesc
+{
+    height: 85px;
+    justify-content: space-between;
+}
+.BookDiv:hover .BookImg
+{
+    transform: scale(1.05) ;
+    box-shadow: 0 12px 14px 0 rgb(0 0 0 / 10%);
+    object-fit: cover;
+
+}

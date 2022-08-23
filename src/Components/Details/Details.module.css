@@ -1,0 +1,18 @@
+.author::before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    background-color: #727070;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+}
+.author::after {
+    content: "";
+    height: 75px;
+    width: 1px;
+    background-color: #727070;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
