@@ -9,7 +9,6 @@ export default function Home() {
 
   const { TotalBooks, PopularBooks } = useContext(BooksContext);
   let navigate = useNavigate();
-  const [category, setcategory] = useState()
   const [categories, setcategories] = useState(['children', 'science', 'travelling', 'romantic', 'horror', 'cooking']);
 
   function goToCategory(e) {
@@ -25,10 +24,14 @@ export default function Home() {
     <>
 
       <div className="w-100 position-relative mb-5">
-        <div className='position-absolute top-0 left-0 right-0 bottom-0 w-100 divphoto py-4 text-center'>
-          <h1 className='text-darkBlue fw-bolder py-2'>Build Your Library</h1>
-          <h5 className='text-muted fw-bold mt-3 pb-5 mb-5'>Buy two selected books and get one for free</h5>
-          <button onClick={() => navigate("/store")} className='bg-darkBlue text-light fw-bold py-2 px-4 mt-5 rounded fs-5'>View all</button>
+        <div className=' w-100position-absolute top-0 left-0 right-0 bottom-0  divphoto py-4 text-center'>
+          <div className='d-flex flex-column justify-content-between w-100 align-items-center h-100'>
+            <div>
+              <h1 className='text-darkBlue fw-bolder py-2'>Build Your Library</h1>
+              <h5 className='text-muted fw-bold '>Buy two selected books and get one for free</h5>
+            </div>
+            <button onClick={() => navigate("/store")} className='w-25 bg-darkBlue text-light fw-bold py-2 px-4 mt-5 rounded fs-5'>View all</button>
+          </div>
         </div>
         <img className=" w-100" src={book2} alt="First slide" />
       </div>
@@ -57,9 +60,9 @@ export default function Home() {
         <span onClick={() => navigate("/bestSeller")} className=' text-grey fs-5 cursore-pointer'>View All</span>
       </div>
       <div className='row'>
-        {categories.map((category,index) =>
+        {categories.map((category, index) =>
           <>
-            
+
             <div key={index} className={`${style.CatDiv} col-md-2 d-flex position-relative align-items-center`}>
 
               <Link to={`/category/${category}`} >
